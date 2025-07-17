@@ -1,0 +1,11 @@
+routingMode: native
+ipv4NativeRoutingCIDR: 10.244.0.0/16
+MTU: 1500
+ipam:
+  mode: kubernetes
+operator:
+  replicas: 1
+bgpControlPlane:
+  enabled: true
+envoy:
+  enabled: false
